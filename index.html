@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">  
+    <script defer src="/js/main.js"></script> 
+</head>
+<body>
+    <div class="password-container">
+        <div class="password-header">
+            <div class="password" >
+                <textarea id="password"></textarea>
+                <button id="copy">Copy</button>
+            </div>
+        </div>
+        <div class="password-body">
+            <div class="form-control">
+                <label for="len">Password Length</label>
+                <input id="len" type="number" value="8" min ="2" max="16">
+            </div>
+            <div class="form-control">
+                <label for="upper">Contain Uppercase Letters</label>
+                <input id="upper" type="checkbox">
+            </div>
+            <div class="form-control">
+                <label for="lower">Contain Lowercase Letters</label>
+                <input id="lower" type="checkbox">
+            </div>
+            <div class="form-control">
+                <label for="number">Contain Numbers</label>
+                <input id="number" type="checkbox">
+            </div>
+            <div class="form-control">
+                <label for="symbol">Contain Symbols</label>
+                <input id="symbol" type="checkbox">
+            </div>
+            <button id="generate" class="generate">Generate Password</button>
+        </div>
+    </div>
+</body>
+</html>
